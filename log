@@ -168,3 +168,8 @@ list.h:8:8: note: previous declaration of ‘firstList’ with type ‘void *(Li
       |        ^~~~~~~~~
 Compilation failed
 b0cd5ed
+Wed 22 Mar 2023 01:25:54 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+355d73e

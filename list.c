@@ -39,7 +39,7 @@ List * createList() {
   return lista;
 }
 
-int * firstList(List * list) {
+void * firstList(List * list) {
   
   list->current=list->head;
 
