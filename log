@@ -365,3 +365,16 @@ Wed 22 Mar 2023 02:07:42 AM UTC:
  tests:  11|1
 total_score: 55/70
 54375b5
+Wed 22 Mar 2023 02:13:17 AM UTC: 
+ list.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:159:20: error: invalid initializer
+  159 |     Node eliminado=list->current;
+      |                    ^~~~
+list.c:164:21: error: invalid type argument of ‘->’ (have ‘Node’)
+  164 |     return eliminado->data;
+      |                     ^~
+Compilation failed
+15ea46d
