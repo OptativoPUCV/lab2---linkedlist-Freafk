@@ -20,3 +20,23 @@ list.c:61:40: error: expected ‘;’ before ‘}’ token
       |     ~                                   
 Compilation failed
 ce7e097
+Wed 22 Mar 2023 01:10:26 AM UTC: 
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:44:17: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   44 |   list->current=lista->head;
+      |                 ^~~~~
+      |                 list
+list.c:44:17: note: each undeclared identifier is reported only once for each function it appears in
+list.c: In function ‘lastList’:
+list.c:59:9: error: expected expression before ‘List’
+   59 |   while(List->current->next!=NULL)
+      |         ^~~~
+list.c:61:40: error: expected ‘;’ before ‘}’ token
+   61 |       list->current=list->current->next
+      |                                        ^
+      |                                        ;
+   62 |     }
+      |     ~                                   
+Compilation failed
+4272268
