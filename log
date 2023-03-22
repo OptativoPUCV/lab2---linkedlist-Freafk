@@ -290,3 +290,21 @@ list.c:101:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 3b8c104
+Wed 22 Mar 2023 01:56:18 AM UTC: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:109:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  109 |   return NULL;
+      |          ^~~~
+list.c:100:6: note: declared here
+  100 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+list.c: In function ‘prevList’:
+list.c:98:1: error: control reaches end of non-void function [-Werror=return-type]
+   98 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c0e2458
