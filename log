@@ -378,3 +378,8 @@ list.c:164:21: error: invalid type argument of ‘->’ (have ‘Node’)
       |                     ^~
 Compilation failed
 15ea46d
+Wed 22 Mar 2023 02:14:20 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+8a21809
