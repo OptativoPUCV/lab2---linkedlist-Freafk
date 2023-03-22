@@ -128,6 +128,7 @@ void pushCurrent(List * list, void * data) {
     {
       list->current->next=aux;
       aux->prev=list->current;
+      list->tail=aux;
     }
     else
     {
