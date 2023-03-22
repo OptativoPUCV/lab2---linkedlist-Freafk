@@ -154,3 +154,17 @@ list.c:47:10: error: returning ‘int’ from a function with return type ‘voi
 cc1: all warnings being treated as errors
 Compilation failed
 407ea76
+Wed 22 Mar 2023 01:25:36 AM UTC: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c:42:7: error: conflicting types for ‘firstList’; have ‘int *(List *)’ {aka ‘int *(struct List *)’}
+   42 | int * firstList(List * list) {
+      |       ^~~~~~~~~
+In file included from list.c:4,
+                 from test.c:5:
+list.h:8:8: note: previous declaration of ‘firstList’ with type ‘void *(List *)’ {aka ‘void *(struct List *)’}
+    8 | void * firstList(List * list);
+      |        ^~~~~~~~~
+Compilation failed
+b0cd5ed
