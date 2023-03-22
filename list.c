@@ -110,7 +110,7 @@ void pushFront(List * list, void * data) {
   {
     list->head=aux;
     list->tail=list->head;
-    list->current->head;
+    list->current=list->head;
   }
 }
 
