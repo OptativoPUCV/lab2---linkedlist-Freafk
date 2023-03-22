@@ -122,7 +122,7 @@ void pushBack(List * list, void * data) {
 void pushCurrent(List * list, void * data) {
 
   Node *aux=createNode(data);
-  if(list->curent!=NULL)
+  if(list->current!=NULL)
   {
     if(list->current->next==NULL)
     {
