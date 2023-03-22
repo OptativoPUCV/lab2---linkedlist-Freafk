@@ -65,6 +65,22 @@ void * nextList(List * list) {
 
 void * lastList(List * list) {
 
+  int aux=0;
+  if(list->current!=NULL)
+  {
+    while(list->current->next!=NULL)
+      {
+        list->current=list->current->next;
+        aux=1;
+      }
+    if(aux==1)
+    {
+      return list->current->data;
+    }
+    
+  }
+  
+  
   return NULL;
 }
 
