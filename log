@@ -326,3 +326,13 @@ Wed 22 Mar 2023 01:59:33 AM UTC:
  tests:  9|3
 total_score: 35/70
 c604426
+Wed 22 Mar 2023 02:00:48 AM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:113:18: error: ‘Node’ has no member named ‘head’
+  113 |     list->current->head;
+      |                  ^~
+Compilation failed
+096f093
