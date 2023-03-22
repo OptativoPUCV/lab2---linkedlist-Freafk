@@ -95,7 +95,7 @@ void * prevList(List * list) {
     }
   }
   
-    return NULL;
+    return ;
 }
 
 void pushFront(List * list, void * data) {
