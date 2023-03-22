@@ -137,3 +137,20 @@ list.c:47:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 09391f4
+Wed 22 Mar 2023 01:25:00 AM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:46:8: error: variable or field ‘a’ declared void
+   46 |   void a=list->head->data;
+      |        ^
+list.c:46:10: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   46 |   void a=list->head->data;
+      |          ^~~~
+list.c:47:10: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   47 |   return a;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+407ea76
