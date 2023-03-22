@@ -40,3 +40,19 @@ list.c:61:40: error: expected ‘;’ before ‘}’ token
       |     ~                                   
 Compilation failed
 4272268
+Wed 22 Mar 2023 01:10:47 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:59:9: error: expected expression before ‘List’
+   59 |   while(List->current->next!=NULL)
+      |         ^~~~
+list.c:61:40: error: expected ‘;’ before ‘}’ token
+   61 |       list->current=list->current->next
+      |                                        ^
+      |                                        ;
+   62 |     }
+      |     ~                                   
+Compilation failed
+f54cdcb
