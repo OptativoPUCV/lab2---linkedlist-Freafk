@@ -94,7 +94,7 @@ void * prevList(List * list) {
       return list->current->data;
     }
   }
-  
+  return NULL;
 }
 
 void pushFront(List * list, void * data) {
@@ -106,7 +106,7 @@ void pushFront(List * list, void * data) {
   list->head->prev=aux;
   list->head=aux;
   }
-  return NULL;
+  
 }
 
 void pushBack(List * list, void * data) {
